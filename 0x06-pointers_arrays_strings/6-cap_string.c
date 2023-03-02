@@ -7,26 +7,26 @@
  */
 char *cap_string(char *s)
 {
-int x = 0, y;
-
+int i = 0, j;
 char a[] = " \t\n,;.!?\"(){}";
 
-while (*(s + x))
+while (*(s + i))
 {
-if (*(s + x) >= 'a' && *(s + x) <= 'z')
+if (*(s + i) >= 'a' && *(s + i) <= 'z')
 {
-if (y == 0)
-*(s + x) -= 'a' - 'A';
+if (i == 0)
+*(s + i) -= 'a' - 'A';
 else
 {
-for (x = 0; x <= 12; x++)
+for (j = 0; j <= 12; j++)
 {
-if (a[x] == *(s + y - 1))
-*(s + y) -= 'a' - 'A';
+if (a[j] == *(s + i - 1))
+*(s + i) -= 'a' - 'A';
 }
 }
 }
-y++;
+i++;
 }
 return (s);
 }
+
