@@ -6,7 +6,6 @@
  * @n2: second number
  * @r: buffer for result
  * @size_r: buffer size
- *
  * Return: address of r or 0
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
@@ -30,7 +29,7 @@ n += n2[j] - '0';
 if (i < 0 && j < 0 && n == 0)
 {
 break;
-{
+}
 m = n / 10;
 r[k] = n % 10 + '0';
 }
@@ -45,4 +44,4 @@ r[l] = m;
 }
 return (r);
 }
-
+/
