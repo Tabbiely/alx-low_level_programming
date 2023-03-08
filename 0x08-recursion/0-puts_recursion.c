@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts_recursion - prints a string in reverse
+ * _puts_recursion - prints a string followed by \n
  * @s:string
  * Return:0
  */
