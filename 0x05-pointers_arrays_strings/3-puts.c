@@ -2,17 +2,17 @@
 
 /**
  * _puts - prints a string
- * @string: the string
+ * @str: the string
  *
  * Return: the length of the string
  */
-void _puts(char *string)
+void _puts(char *str)
 {
 int x = 0;
 
-while (string[x] != '\0')
+while (str[x] != '\0')
 {
-_putchar(string[x]);
+_putchar(str[x]);
 x++;
 }
 _putchar('\n');
