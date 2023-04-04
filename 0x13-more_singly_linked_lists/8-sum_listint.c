@@ -8,11 +8,7 @@
  */
 int sum_listint(listint_t *head)
 {
-int sum = 0;
-for (listint_t *current = head; current != NULL; current = current->next)
-{
-sum += current->n;
-}
-
-return (sum);
+if (head == NULL)
+return (0);
+return (head->n + sum_listint(head->next));
 }
