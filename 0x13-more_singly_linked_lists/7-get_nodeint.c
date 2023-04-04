@@ -1,13 +1,11 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index -returns the nth node of a listint_t linked list.
+ * get_nodeint_at_index - Returns the nth node of a listint_t linked list.
+ * @head: A pointer to the head node of the list.
+ * @index: Index of the node to return.
  *
- * @header: a pointer to the head node of the list.
- * @index: index of the node to return.
- *
- *
- *Return: pointer to the nth node of the list.
+ * Return: Pointer to the nth node of the list, or NULL if it doesn't exist.
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
@@ -20,5 +18,4 @@ index--;
 }
 
 return (current);
-
 }
